@@ -2,6 +2,7 @@
 package com.deploygate.sample;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,6 +21,7 @@ public class SampleActivity extends Activity
     private TextView mAvailableText;
     private TextView mManagedText;
     private TextView mAuthorizedText;
+    private TextView mTitleText;
     private EditText mLogMessage;
     private Button mCrashButton;
 
@@ -35,6 +37,7 @@ public class SampleActivity extends Activity
         mAvailableText = (TextView) findViewById(R.id.available);
         mManagedText = (TextView) findViewById(R.id.managed);
         mAuthorizedText = (TextView) findViewById(R.id.authorized);
+        mTitleText = (TextView) findViewById(R.id.title);
         mCrashButton = (Button) findViewById(R.id.button);
         mLogMessage = (EditText) findViewById(R.id.message);
     }
@@ -121,6 +124,8 @@ public class SampleActivity extends Activity
     @Override
     public void onUpdateAvailable(int serial, String versionName, int versionCode) {
         // will be called on app update is available.
-        // TODO no sample implemented yet
+        mTitleText.setTextColor(Color.GREEN);
+        mTitleText.setText(String.format("Update is Available: #%1$d, %2$s(%3$d)", serial,
+                versionName, versionCode));
     }
 }

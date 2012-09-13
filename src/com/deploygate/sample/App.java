@@ -12,5 +12,12 @@ public class App extends Application {
 
         // Install DeployGate to this application instance.
         DeployGate.install(this);
+        
+        // [[ Since DeployGate SDK r2 ]]
+        //
+        // If you want to prevent the app distributed by someone else,
+        // specify your username explicitly here, like:
+        //
+        // DeployGate.install(this, "YOURUSERNAME");
     }
 }

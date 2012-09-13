@@ -7,9 +7,13 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="15" />
 
-    <!-- This permission is required to enable DeployGate's Remote LogCat before Jelly Bean platforms. -->
+    <!--
+      This permission is necessary to enable DeployGate's Remote LogCat on pre-JellyBean platforms. 
+      You can remove it you don't need the feature.
+    -->
     <uses-permission android:name="android.permission.READ_LOGS" />
 
+    <!-- Don't forget to add android:name to specify the Application class. -->
     <application
         android:name=".App"
         android:icon="@drawable/ic_launcher"
