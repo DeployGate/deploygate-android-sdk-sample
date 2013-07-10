@@ -5,7 +5,7 @@ This is a sample project of DeployGate SDK for Android(TM).
 
 SDK document available at https://deploygate.com/docs/sdk
 
-Licence
+License
 -------
 
    Copyright 2012 DeployGate, tnj
