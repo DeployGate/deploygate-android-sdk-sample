@@ -35,5 +35,5 @@ if (project.hasProperty("DEPLOYGATE_USER_NAME")) {
 
 dependencies {
     compile 'com.android.support:support-v4:18.0.0'
-    compile files('libs/deploygatesdk.jar')
+    compile 'com.deploygate:sdk:3.1'
 }
