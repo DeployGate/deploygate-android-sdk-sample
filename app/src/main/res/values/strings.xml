@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">Sample</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="hello">This is a sample app of DeployGate SDK.</string>
+    <string name="logo_content_description">DeployGate Logo</string>
+    
+    <string name="question_available">Is the DeployGate available on this device?</string>
+    <string name="available_yes">YES, service available.</string>
+    <string name="available_no">NO.</string>
+    <string name="question_managed">Is this app managed under DeployGate?</string>
+    <string name="managed_yes">YES, it\'s managed.</string>
+    <string name="managed_no">NO.</string>
+    <string name="question_authorized">Is the user authorized to use this app?</string>
+    <string name="authorized_yes">YES, I\'m %s.</string>
+    <string name="authorized_no">NO.</string>
+    
+    <string name="crash_button">Crash this app!</string>
+    
+    <string name="send_custom_log">Send a custom log</string>
+    <string name="custom_log_default">Hello!</string>
+    
+</resources>
