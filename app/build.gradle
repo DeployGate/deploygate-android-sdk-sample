@@ -19,20 +19,6 @@ android {
     }
 }
 
-if (project.hasProperty("DEPLOYGATE_USER_NAME")) {
-    deploygate {
-        userName = DEPLOYGATE_USER_NAME
-        token = DEPLOYGATE_API_TOKEN
-
-        apks {
-            debug {
-                sourceFile = file("build/outputs/apk/app-debug.apk")
-                message = "test upload sample"
-            }
-        }
-    }
-}
-
 dependencies {
     compile 'com.android.support:support-v4:18.0.0'
     compile 'com.deploygate:sdk:3.1'
