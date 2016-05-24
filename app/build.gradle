@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+apply plugin: 'deploygate'
+
+android {
+    compileSdkVersion 14
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.deploygate.sample"
+        minSdkVersion 8
+        targetSdkVersion 15
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.deploygate:sdk:3.1'
+}

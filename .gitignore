@@ -14,10 +14,19 @@ gen/
 
 # Local configuration file (sdk path, etc)
 local.properties
-libs/*.properties
 
-# proguard
-proguard/
+# OS
+Thumbs.db
+.DS_Store
 
-# others
-*.swp
+# Eclipse project files
+.classpath
+.project
+
+# Android Studio
+.idea
+.gradle
+build/
+
+# Gradle
+gradle.properties
