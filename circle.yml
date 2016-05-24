@@ -1,0 +1,16 @@
+machine:
+  environment:
+    TERM: dumb
+    ANDROID_HOME: /usr/local/android-sdk-linux
+
+dependencies:
+  pre:
+    - if [ ! -f gradle.properties ]; then echo 'org.gradle.daemon=true' >> gradle.properties; fi
+  override:
+    - ./gradlew dependencies
+
+deployment:
+  deploygate:
+    branch: /.+/
+    commands:
+      - ./gradlew uploadDeployGateDebug -PDEPLOYGATE_USER_NAME=$DEPLOYGATE_USER_NAME -PDEPLOYGATE_API_TOKEN=$DEPLOYGATE_API_TOKEN -PBUILD_MESSAGE="[$CIRCLE_BRANCH] `git log --pretty=oneline --abbrev-commit -1`"
