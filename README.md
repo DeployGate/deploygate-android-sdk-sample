@@ -1,6 +1,8 @@
 android-sdk-sample
 ==================
 
+[<img src="https://dply.me/1ordkb/button/large" alt="Try it on your device via DeployGate">](https://dply.me/1ordkb#install)
+
 This is a sample project of DeployGate SDK for Android(TM).
 
 SDK document available at https://deploygate.com/docs/sdk
