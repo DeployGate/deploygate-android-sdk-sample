@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'deploygate'
 
 android {
-    compileSdkVersion = 23
-    buildToolsVersion = "23.0.1"
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.2"
 
     defaultConfig {
         applicationId "com.deploygate.sample"
-        minSdkVersion 8
-        targetSdkVersion 23
+        minSdkVersion 9
+        targetSdkVersion 25
     }
 
     buildTypes {
@@ -20,6 +20,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:23.0.1'
-    compile 'com.deploygate:sdk:3.1'
+    compile 'com.android.support:support-v4:25.4.0'
+    compile 'com.deploygate:sdk:3.2.0'
 }

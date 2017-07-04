@@ -3,10 +3,6 @@
     android:versionCode="2"
     android:versionName="1.0" >
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="15" />
-
     <!--
       This permission is necessary to enable DeployGate's Remote LogCat on pre-JellyBean platforms. 
       You can remove it you don't need the feature.
