@@ -19,7 +19,15 @@ android {
     }
 }
 
+repositories {
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+
 dependencies {
     compile 'com.android.support:support-v4:25.4.0'
-    compile 'com.deploygate:sdk:3.2.0'
+
+    // compile 'com.deploygate:sdk:3.2.0'
+    compile 'com.github.deploygate:deploygate-android-sdk:implement-get-revision-SNAPSHOT'
 }
