@@ -10,7 +10,7 @@ SDK document available at https://deploygate.com/docs/sdk
 License
 -------
 
-   Copyright 2012 DeployGate, tnj
+   Copyright 2017 DeployGate, tnj
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
