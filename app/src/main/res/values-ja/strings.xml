@@ -24,7 +24,7 @@
     <string name="logcat_toast">LogCatを取得して送信しています。deploygate.comの端末の詳細ページのLogCatタブをご確認ください。</string>
     <string name="update_button">アップデート</string>
     <string name="update_available">アップデートがあります: #%1$d, %2$s(%3$d) %4$s</string>
-    <string name="comments">コメント</string>
+    <string name="comments">コメント一覧</string>
     <string name="composeComment">投稿する</string>
 
 </resources>
