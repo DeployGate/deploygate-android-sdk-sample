@@ -29,6 +29,7 @@ public class SampleActivity extends Activity
     private TextView mTitleText;
     private EditText mLogMessage;
     private Button mCrashButton;
+    private Button mLogCatButton;
     private Button mUpdateButton;
     private LinearLayout mDistributionComments;
 
@@ -46,6 +47,7 @@ public class SampleActivity extends Activity
         mAuthorizedText = (TextView) findViewById(R.id.authorized);
         mTitleText = (TextView) findViewById(R.id.title);
         mCrashButton = (Button) findViewById(R.id.button);
+        mLogCatButton = (Button) findViewById(R.id.logcat);
         mUpdateButton = (Button) findViewById(R.id.updateButton);
         mLogMessage = (EditText) findViewById(R.id.message);
         mDistributionComments = (LinearLayout) findViewById(R.id.distributionComments);
@@ -191,6 +193,7 @@ public class SampleActivity extends Activity
         );
         
         mCrashButton.setEnabled(isAuthorized);
+        mLogCatButton.setEnabled(isAuthorized);
         mLogMessage.setEnabled(isAuthorized);
         for (int id : sLogButtonIds) {
             findViewById(id).setEnabled(isAuthorized);
