@@ -186,9 +186,14 @@ public class SampleActivity extends Activity
             mManagedText.setText(getString(R.string.managed_no));
             mDistributionComments.setVisibility(View.GONE);
         }
+
+        String username = DeployGate.getDistributionUserName();
+        if (username == null)
+            username = loginUsername;
+
         mAuthorizedText.setText(
             isAuthorized
-            ? getString(R.string.authorized_yes, loginUsername)
+            ? getString(R.string.authorized_yes, username)
             : getString(R.string.authorized_no)
         );
         
