@@ -1,7 +1,7 @@
 deploygate-android-sdk-sample
 =============================
 
-[![CircleCI](https://circleci.com/gh/DeployGate/deploygate-android-sdk-sample.svg?style=svg)](https://circleci.com/gh/DeployGate/deploygate-android-sdk-sample)
+[![CircleCI](https://circleci.com/gh/DeployGate/deploygate-android-sdk-sample.svg?style=svg&circle-token=fab79d08a68623be1dbdd30492131e6523d85e6e)](https://circleci.com/gh/DeployGate/deploygate-android-sdk-sample)
 [![Download to device](https://dply.me/1ordkb/button/small)](https://dply.me/1ordkb#install)
 
 This is a sample project of DeployGate SDK for Android™.
