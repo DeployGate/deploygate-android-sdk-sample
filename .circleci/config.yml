@@ -35,7 +35,7 @@ jobs:
     steps:
       - checkout
       - restore_gradle_cache
-      - run: ./gradlew uploadDeployGateDebug -PDEPLOYGATE_USER_NAME=$DEPLOYGATE_USER_NAME -PDEPLOYGATE_API_TOKEN=$DEPLOYGATE_API_TOKEN -PBUILD_MESSAGE="[$CIRCLE_BRANCH] `git log --pretty=oneline --abbrev-commit -1`"
+      - run: DEPLOYGATE_MESSAGE="[$CIRCLE_BRANCH] `git log --pretty=oneline --abbrev-commit -1`" ./gradlew uploadDeployGateDebug
       - save_gradle_cache
 
 workflows:
