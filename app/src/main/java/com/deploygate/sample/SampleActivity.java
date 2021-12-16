@@ -161,8 +161,6 @@ public class SampleActivity extends Activity
 
         if (distributionId != null) {
             Log.i(TAG, distributionId);
-            Log.i(TAG, DeployGate.getDistributionTitle());
-            Log.i(TAG, DeployGate.getDistributionUserName());
         } else {
             Log.i(TAG, "distributionId is not found");
         }
