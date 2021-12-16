@@ -1,0 +1,45 @@
+version: 2.1
+
+executors:
+  android:
+    docker:
+      - image: cimg/android:2021.12.1
+    environment:
+      GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx3072m -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError" -Dorg.gradle.daemon=false'
+
+commands:
+  restore_gradle_cache:
+    parameters: &gradle_cache_parameters
+      cache_version:
+        type: string
+        default: v1
+    steps:
+      - run: ./scripts/check_sum.bash > all-gradle.md5
+      - restore_cache:
+          keys:
+            - gradle-<< parameters.cache_version >>-{{ checksum "all-gradle.md5" }}
+  save_gradle_cache:
+    parameters: *gradle_cache_parameters
+    steps:
+      - save_cache:
+          paths:
+            - ~/.android
+            - ~/.gradle
+            - .gradle
+            - ~/.m2
+          key: gradle-<< parameters.cache_version >>-{{ checksum "all-gradle.md5" }}
+
+jobs:
+  assemble:
+    executor: android
+    steps:
+      - checkout
+      - restore_gradle_cache
+      - run: DEPLOYGATE_MESSAGE="[$CIRCLE_BRANCH] `git log --pretty=oneline --abbrev-commit -1`" ./gradlew uploadDeployGateDebug
+      - save_gradle_cache
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - assemble

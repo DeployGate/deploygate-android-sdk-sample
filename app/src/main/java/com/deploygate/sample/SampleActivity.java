@@ -156,6 +156,16 @@ public class SampleActivity extends Activity
                 ? getString(R.string.available_yes, DeployGate.getDeployGateVersionCode())
                 : getString(R.string.available_no)
         );
+
+        String distributionId = DeployGate.getDistributionId();
+
+        if (distributionId != null) {
+            Log.i(TAG, distributionId);
+            Log.i(TAG, DeployGate.getDistributionTitle());
+            Log.i(TAG, DeployGate.getDistributionUserName());
+        } else {
+            Log.i(TAG, "distributionId is not found");
+        }
     }
 
     @Override
