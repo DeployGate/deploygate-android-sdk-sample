@@ -1,20 +1,14 @@
 deploygate-android-sdk-sample
+
 =============================
 
-[![CircleCI](https://circleci.com/gh/DeployGate/deploygate-android-sdk-sample.svg?style=svg&circle-token=fab79d08a68623be1dbdd30492131e6523d85e6e)](https://circleci.com/gh/DeployGate/deploygate-android-sdk-sample)
-[![Download to device](https://dply.me/1ordkb/button/small)](https://dply.me/1ordkb#install)
-
-This is a sample project of DeployGate SDK for Android™.
-
-SDK document is available at https://deploygate.com/docs/sdk
-
-![screenshot_1499141363](https://user-images.githubusercontent.com/140446/27814793-0c413178-60ba-11e7-9a41-807dec91876c.png)
+# This repository has been archived. See the latest example in https://github.com/DeployGate/deploygate-android-sdk
 
 
 License
 -------
 
-    Copyright 2017 DeployGate, tnj
+    Copyright 2017-2022 DeployGate, tnj
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
